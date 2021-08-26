@@ -1,11 +1,11 @@
 'use script';
 
 let money = 30000;
-console.log('Доход за месяц:', money);
+console.log(typeof money);
 
 
-let income = 'Дополнительный доход:';
-console.log(income + ' 10000');
+let income = 'Фриланс';
+console.log(typeof income);
 
 
 let addExpenses = 'Интернет, такси, коммуналка, продукты';
@@ -15,7 +15,7 @@ console.log(addExpenses.length);
 
 
 let deposit = true;
-console.log(deposit);
+console.log(typeof deposit);
 
 
 let mission = 100000;
