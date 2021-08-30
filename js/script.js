@@ -1,27 +1,25 @@
 'use script';
 
 let money = 30000;
-console.log(typeof money);
-
 
 let income = 'Фриланс';
-console.log(typeof income);
-
 
 let addExpenses = 'Интернет, такси, коммуналка, продукты';
-console.log(addExpenses.toLowerCase());
-console.log(addExpenses.split(', '));
-console.log(addExpenses.length);
-
 
 let deposit = true;
-console.log(typeof deposit);
-
 
 let mission = 100000;
+
 let period = 3;
-console.log('Период равен', period, 'месяцев.', 'Цель заработать', mission, 'рублей.');
+
+let budgetDay = money / 30;
+
+console.log(typeof money);
+console.log(typeof income);
+console.log(addExpenses.toLowerCase(), addExpenses.split(', '));
+console.log(addExpenses.length);
+console.log(typeof deposit);
+console.log('Период равен ' + period + ' месяцев.' + ' Цель заработать ' + mission + ' рублей.');
+console.log('Дневной бюджет: ' + budgetDay);
 
 
-let budgetDay = 'Дневной бюджет:';
-console.log(budgetDay, money/=30);
