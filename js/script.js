@@ -19,7 +19,7 @@ console.log(typeof income);
 console.log(addExpenses.toLowerCase().split(', '));
 console.log(addExpenses.length);
 console.log(typeof deposit);
-console.log('Период равен ' + period + ' месяцев.' + ' Цель заработать ' + mission + ' рублей.');
-console.log('Дневной бюджет: ' + budgetDay);
+console.log(`Период равен: ${period} месяцев. Цель заработать ${mission} рублей`);
+console.log(`Дневной бюджет: ${budgetDay}`);
 
 
