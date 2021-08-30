@@ -16,7 +16,7 @@ let budgetDay = money / 30;
 
 console.log(typeof money);
 console.log(typeof income);
-console.log(addExpenses.toLowerCase(), addExpenses.split(', '));
+console.log(addExpenses.toLowerCase().split(', '));
 console.log(addExpenses.length);
 console.log(typeof deposit);
 console.log('Период равен ' + period + ' месяцев.' + ' Цель заработать ' + mission + ' рублей.');
