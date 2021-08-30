@@ -1,25 +1,70 @@
 'use script';
+'use strict'; 
 
-let money = 30000;
+let money = prompt ('Ваш месячный дход');
 
 let income = 'Фриланс';
 
-let addExpenses = 'Интернет, такси, коммуналка, продукты';
+let addExpenses = prompt ('Перечислите возможные расходы за рассчитываемый период через запятую');
 
-let deposit = true;
+let deposit = confirm ('Есть ли у вас депозит в банке?');
+
+let expenses1 = prompt ('Введите обязательную статью расходов?');
+
+let amount1 = prompt ('Во сколько это обойдется?');
+
+let expenses2 = prompt ('Введите обязательную статью расходов?');
+
+let amount2 = prompt ('Во сколько это обойдется?');
 
 let mission = 100000;
 
-let period = 3;
+let period = 4;
 
-let budgetDay = money / 30;
+let budgetMonth = Number(money) - (Number(amount1) + Number(amount2));
 
-console.log(typeof money);
-console.log(typeof income);
-console.log(addExpenses.toLowerCase().split(', '));
-console.log(addExpenses.length);
-console.log(typeof deposit);
-console.log(`Период равен: ${period} месяцев. Цель заработать ${mission} рублей`);
-console.log(`Дневной бюджет: ${budgetDay}`);
+let budgetDay = budgetMonth / 30;
+
+
+
+console.log(money);
+console.log(addExpenses);
+console.log(deposit);
+console.log(expenses1);
+console.log(amount1);
+console.log(expenses2);
+console.log(amount2);
+console.log(budgetMonth);
+console.log(`Цель будет достигнута за ${Math.ceil(mission / budgetMonth)} месяцев`);
+console.log('Бюджет на день:', Math.floor(budgetDay));
+
+
+
+if (budgetDay > 1200){
+  console.log('У вас высокий уровень дохода');
+}
+  else if (1200 && budgetDay > 600){
+    console.log('У вас средний уровень дохода');
+  } 
+  else if (budgetDay < 600){
+    console.log('К сожалению, у вас уровень дохода ниже среднего');
+  } 
+  else if (budgetDay < 0){
+    console.log('Что-то пошло не так...');
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
